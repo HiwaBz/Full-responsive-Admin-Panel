@@ -1,0 +1,204 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: "Nunito Sans", sans-serif;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.3rem;
+}
+p,
+span {
+  font-family: "Nunito Sans", sans-serif;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.075rem;
+  margin: auto 5px;
+}
+.main {
+  display: flex;
+  flex-direction: row;
+  height: fit-content;
+}
+
+.nav {
+  flex: 3;
+  height: 100%;
+  max-width: 250px;
+  min-width: 200px;
+}
+.sec {
+  flex: 1;
+  height: auto;
+  background-color: #2d68fe;
+}
+.slidebar {
+  padding: 10px 5px;
+  width: 100%;
+  background-color: white;
+}
+.logo {
+  display: flex;
+  flex-direction: row;
+  margin: 20px;
+  justify-content: start;
+  align-items: center;
+}
+.logo div {
+  padding-inline: 5px;
+  justify-content: center;
+  align-items: center;
+}
+
+.lis {
+  margin-top: 60px;
+}
+.menues {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 10px;
+}
+.menues button {
+  width: 100%;
+  display: flex;
+  flex: 1 4;
+  align-items: center;
+  justify-self: center;
+  background-color: transparent;
+  border-radius: 3px;
+  border-style: none;
+  padding: 10px;
+  margin: auto 8px;
+  transition: background 0.5s;
+  cursor: pointer;
+}
+.menues:hover button {
+  background-color: rgba(239, 246, 255, 1);
+}
+.menues .selected {
+  width: 100%;
+  display: flex;
+  background-color: rgba(239, 246, 255, 1);
+  border-radius: 3px;
+  border-style: none;
+  padding: 10px;
+  margin: auto 8px;
+  align-items: center;
+}
+.menues button img {
+  margin-inline: 10px;
+  width: 20px;
+  align-items: center;
+}
+
+.account {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  justify-content: center;
+  padding-inline: 15px;
+}
+.Notifications,
+.seles {
+  position: relative;
+}
+
+.notify {
+  background-color: #ff472e;
+  text-align: center;
+  border-radius: 10px;
+  color: white;
+  font-size: 0.867rem;
+}
+.notify,
+.arrow-down {
+  position: absolute;
+  right: 7px;
+  top: 12px;
+  width: 20px;
+  height: 20px;
+}
+.bottom-menu {
+  width: 100%;
+  padding: 10px 5px;
+}
+.account .img-account {
+  flex: 1;
+  padding-inline: 10px;
+}
+.account .name-account {
+  flex: 5;
+}
+.account .name-account p {
+  font-size: 0.867rem;
+  display: block;
+  margin: 0;
+}
+.account .name-account p:nth-child(2) {
+  padding: 0;
+  color: rgba(66, 66, 66, 0.568);
+}
+.open-close-sec {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: end;
+  padding: 15px 15px;
+}
+.open-close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: #2d68fe;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.open-close img {
+  transform: rotate(90deg);
+  filter: brightness(100);
+}
+
+@media only screen and (max-width: 780px) {
+  .nav {
+    max-width: 70px;
+    min-width: 60px;
+  }
+  .menues button img {
+    width: 25px;
+  }
+  .notify {
+    right: 30%;
+    width: 15px;
+    height: 15px;
+  }
+  .img-account {
+    display: flex;
+    justify-content: center;
+  }
+  .menues button .p-menu,
+  .name-account,
+  .inner-logo-text {
+    display: none;
+  }
+  .open-close-sec {
+    display: flex;
+    justify-content: center;
+  }
+  .open-close-sec img {
+    transform: rotate(270deg);
+  }
+  .logo {
+    justify-content: center;
+    align-items: center;
+  }
+}
