@@ -2,11 +2,10 @@
   box-sizing: border-box;
 }
 body {
-  height: 100vh;
+  height: 150vh;
   margin: 0;
   padding: 0;
 }
-
 h1 {
   font-family: "Nunito Sans", sans-serif;
   font-family: "Raleway", sans-serif;
@@ -31,6 +30,13 @@ select {
   height: fit-content;
 }
 
+.light-dark {
+  display: flex;
+  justify-content: end;
+}
+.light-dark img {
+  cursor: pointer;
+}
 .nav {
   flex: 3;
   height: 100%;
@@ -79,7 +85,7 @@ select {
   background-color: transparent;
   border-radius: 3px;
   border-style: none;
-  padding: 10px;
+  padding: 10px 0px;
   margin: auto 8px;
   transition: background 0.5s;
   cursor: pointer;
@@ -205,13 +211,12 @@ select {
   justify-content: center;
   align-items: center;
 }
-.middle form input {
-  min-width: 120px;
-  max-width: 300px;
+.middle form input[type="text"] {
   padding: 5px 6px;
   margin-inline: 3px;
   border: solid rgba(0, 0, 0, 0.253) 1px;
   border-radius: 3px;
+  width: 20vw;
 }
 .search-btn {
   background-color: #2d68fe;
