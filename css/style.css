@@ -19,6 +19,12 @@ span {
   font-size: 1.075rem;
   margin: auto 5px;
 }
+option,
+select {
+  font-family: "Nunito Sans", sans-serif;
+  font-family: "Raleway", sans-serif;
+  font-size: 0.876rem;
+}
 .main {
   display: flex;
   flex-direction: row;
@@ -30,11 +36,12 @@ span {
   height: 100%;
   max-width: 250px;
   min-width: 200px;
+  border-right: solid rgba(0, 0, 0, 0.144) 1px;
 }
 .sec {
+  position: relative;
   flex: 1;
   height: auto;
-  background-color: #2d68fe;
 }
 .sidebar {
   padding: 10px 5px;
@@ -165,6 +172,83 @@ span {
 .open-close img {
   transform: rotate(90deg);
   filter: brightness(100);
+}
+
+/* header */
+.header {
+  position: sticky;
+  top: 0;
+  right: 0;
+  left: 0;
+  /* display: grid;
+  grid-template-columns: 2fr 3fr 1fr; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: auto;
+  height: 60px;
+  background-color: white;
+  margin: 0px auto 15px;
+  border-bottom: solid rgba(0, 0, 0, 0.144) 1px;
+}
+
+.header button {
+  cursor: pointer;
+}
+.middle {
+  display: flex;
+  align-items: center;
+}
+.middle form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.middle form input {
+  min-width: 120px;
+  max-width: 300px;
+  padding: 5px 6px;
+  margin-inline: 3px;
+  border: solid rgba(0, 0, 0, 0.253) 1px;
+  border-radius: 3px;
+}
+.search-btn {
+  background-color: #2d68fe;
+  border: none;
+  color: white;
+  padding: 6px;
+  border-radius: 3px;
+}
+
+.language select {
+  background-color: white;
+  border: none;
+}
+.language option {
+  background-color: white;
+  border: none;
+  border: solid red 1px;
+}
+.add-post {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.add-post button {
+  background-color: white;
+  border: none;
+}
+.end-sec {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin-inline: 10px;
+  gap: 0.5em;
+}
+.end-sec button {
+  background-color: white;
+  border: none;
 }
 
 @media only screen and (max-width: 780px) {
