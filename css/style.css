@@ -5,6 +5,7 @@ body {
   height: 150vh;
   margin: 0;
   padding: 0;
+  background-color: white;
 }
 h1 {
   font-family: "Nunito Sans", sans-serif;
@@ -36,6 +37,9 @@ select {
 }
 .light-dark img {
   cursor: pointer;
+  background-color: rgb(168, 168, 168);
+  border-radius: 7px;
+  padding: 2px;
 }
 .nav {
   flex: 3;
@@ -186,14 +190,12 @@ select {
   top: 0;
   right: 0;
   left: 0;
-  /* display: grid;
-  grid-template-columns: 2fr 3fr 1fr; */
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   width: auto;
   height: 60px;
-  background-color: white;
+  /* background-color: white; */
   margin: 0px auto 15px;
   border-bottom: solid rgba(0, 0, 0, 0.144) 1px;
 }
@@ -227,11 +229,11 @@ select {
 }
 
 .language select {
-  background-color: white;
+  background-color: transparent;
   border: none;
 }
 .language option {
-  background-color: white;
+  background-color: transparent;
   border: none;
   border: solid red 1px;
 }
@@ -241,7 +243,7 @@ select {
   align-items: center;
 }
 .add-post button {
-  background-color: white;
+  background-color: transparent;
   border: none;
 }
 .end-sec {
@@ -252,7 +254,7 @@ select {
   gap: 0.5em;
 }
 .end-sec button {
-  background-color: white;
+  background-color: transparent;
   border: none;
 }
 
